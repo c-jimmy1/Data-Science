@@ -14,12 +14,12 @@ This repository contains:
 - **Spatial:** RPI Campus, Troy, NY (approx.)
 
 ## Licensing
-- **Proposed:** CC BY 4.0 (you may change this if needed)
+- MIT License
 
 ## Collection & Generation
 - Observations recorded manually on-site.  
 - Mock data generated to respect vendor hours, daily 15:00–17:00 break, lunch/dinner peaks, and lower weekend demand for non-Panera.
 
 ## Contact
-- **Creator:** Jimmy Chen
+- **Creator:** Jimmy Chen, Joshua Sundararaman, Taein Yi
 

@@ -10,6 +10,14 @@
     {
       "@type": "schema:Person",
       "schema:name": "Jimmy Chen"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Joshua Sundararaman"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Taein Yi"
     }
   ],
   "dcterms:publisher": "RPI student project (coursework)",
@@ -34,7 +42,7 @@
     "modified": "2025-10-07"
   },
   "dcterms:source": "Observed samples (2025-10-06) + generated mock data respecting vendor hours/breaks.",
-  "dcterms:rights": "CC BY 4.0 (change if needed)",
+  "dcterms:rights": "MIT License",
   "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
   "dcterms:provenance": "Original observations collected manually onsite; mock data generated via scripted process to match vendor schedules and meal-time trends.",
   "dcterms:relation": {
