@@ -1,0 +1,7 @@
+field_name,type,format,description,example,constraints
+timestamp,datetime,"YYYY-MM-DD HH:MM:SS (local, America/New_York)",Observation timestamp of the record.,2025-10-06 12:36:00,Non-null; within vendor open hours and outside daily 15:00–17:00 break.
+vendor,string,controlled vocabulary,Vendor name.,The Halal Shack,"One of: The Halal Shack, Panera Bread, Jimmy John's, Wild Blue Sushi, Bird 'n' Brine, Fathers"
+num_people,integer,count,Size of arriving party in people.,3,>= 1
+start_time,time,HH:MM (local),Queue join time.,12:36,Within vendor open hours; not in daily 15:00–17:00 break.
+end_time,time,HH:MM (local),Queue exit time.,12:44,>= start_time; within vendor open hours.
+line_wait_time (min),integer,minutes,Total time spent waiting in line.,7,>= 0; derived as (end_time - start_time) in minutes.

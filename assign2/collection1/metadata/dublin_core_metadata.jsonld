@@ -1,0 +1,84 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "schema:Dataset",
+  "dcterms:title": "Campus Dining Line Wait Times (Mock + Observed)",
+  "dcterms:creator": [
+    {
+      "@type": "schema:Person",
+      "schema:name": "Jimmy Chen"
+    }
+  ],
+  "dcterms:publisher": "RPI student project (coursework)",
+  "dcterms:description": "Minute-level observations and mock extensions of line wait times at campus dining vendors. Records include vendor, observed party size, start/end time, and total line wait time (minutes). Dataset follows vendor business hours, daily 2-hour breaks, and typical lunch/dinner peaks; weekends are modeled as less busy for non-Panera.",
+  "dcterms:subject": [
+    "queueing",
+    "campus dining",
+    "operations",
+    "service wait times",
+    "simulation"
+  ],
+  "dcterms:type": "Dataset",
+  "dcterms:identifier": "urn:uuid:20251007064127395496",
+  "dcterms:language": "en",
+  "dcterms:format": "text/csv",
+  "dcterms:coverage": {
+    "spatial": "RPI Campus, Troy, NY, USA (approx.)",
+    "temporal": "2025-10-02 / 2025-10-06"
+  },
+  "dcterms:date": {
+    "created": "2025-10-07",
+    "modified": "2025-10-07"
+  },
+  "dcterms:source": "Observed samples (2025-10-06) + generated mock data respecting vendor hours/breaks.",
+  "dcterms:rights": "CC BY 4.0 (change if needed)",
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
+  "dcterms:provenance": "Original observations collected manually onsite; mock data generated via scripted process to match vendor schedules and meal-time trends.",
+  "dcterms:relation": {
+    "conformsTo": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+  },
+  "schema:variableMeasured": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "timestamp",
+      "schema:description": "Observation timestamp in local time (America/New_York), ISO 8601."
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "vendor",
+      "schema:description": "Dining vendor name (controlled list)."
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "num_people",
+      "schema:description": "Observed party size (count of people in the arriving group)."
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "start_time",
+      "schema:description": "Queue join time (HH:MM, local)."
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "end_time",
+      "schema:description": "Queue exit time (HH:MM, local)."
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "line_wait_time (min)",
+      "schema:description": "Total minutes waited in line."
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": "schema:DataDownload",
+      "schema:encodingFormat": "text/csv",
+      "schema:contentUrl": "sandbox:/mnt/data/dining_data_with_hours_and_breaks.csv"
+    }
+  ],
+  "schema:keywords": "dining, wait times, queues, RPI, simulation",
+  "schema:isAccessibleForFree": true
+}
