@@ -5,7 +5,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@type": "schema:Dataset",
-  "dcterms:title": "Campus Dining Line Wait Times (Mock + Observed)",
+  "dcterms:title": "Campus Dining Line Wait Times (Observed)",
   "dcterms:creator": [
     {
       "@type": "schema:Person",
@@ -34,17 +34,17 @@
   "dcterms:language": "en",
   "dcterms:format": "text/csv",
   "dcterms:coverage": {
-    "spatial": "RPI Campus, Troy, NY, USA (approx.)",
+    "spatial": "RPI Union, Troy, NY, USA",
     "temporal": "2025-10-02 / 2025-10-06"
   },
   "dcterms:date": {
     "created": "2025-10-07",
     "modified": "2025-10-07"
   },
-  "dcterms:source": "Observed samples (2025-10-06) + generated mock data respecting vendor hours/breaks.",
+  "dcterms:source": "Observed samples (2025-10-06)",
   "dcterms:rights": "MIT License",
   "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
-  "dcterms:provenance": "Original observations collected manually onsite; mock data generated via scripted process to match vendor schedules and meal-time trends.",
+  "dcterms:provenance": "Original observations collected manually onsite.",
   "dcterms:relation": {
     "conformsTo": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
   },
@@ -84,7 +84,7 @@
     {
       "@type": "schema:DataDownload",
       "schema:encodingFormat": "text/csv",
-      "schema:contentUrl": "sandbox:/mnt/data/dining_data_with_hours_and_breaks.csv"
+      "schema:contentUrl": "sandbox:/mnt/data/dining_data.csv"
     }
   ],
   "schema:keywords": "dining, wait times, queues, RPI, simulation",
