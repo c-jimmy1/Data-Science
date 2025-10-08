@@ -18,7 +18,6 @@ This repository contains:
 
 ## Collection & Generation
 - Observations recorded manually on-site.  
-- Mock data generated to respect vendor hours, daily 15:00–17:00 break, lunch/dinner peaks, and lower weekend demand for non-Panera.
 
 ## Contact
 - **Creator:** Jimmy Chen, Joshua Sundararaman, Taein Yi
