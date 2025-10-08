@@ -1,7 +1,7 @@
 # Campus Dining Line Wait Times — Metadata (Dublin Core)
 
 This repository contains:  
-- `dining_data_with_hours_and_breaks.csv` — dataset (observed + mock)  
+- `dining_data.csv` — dataset (observed + mock)  
 - `dublin_core_metadata.jsonld` — dataset-level metadata (Dublin Core, JSON-LD)  
 - `data_dictionary.csv` — field-level metadata
 
@@ -11,7 +11,7 @@ This repository contains:
 
 ## Coverage
 - **Temporal:** 2025-10-02 / 2025-10-06 (local time, America/New_York)  
-- **Spatial:** RPI Campus, Troy, NY (approx.)
+- **Spatial:** RPI Union, Troy, NY
 
 ## Licensing
 - MIT License
