@@ -11,13 +11,13 @@ HDF5_ROOT = DATASET_II_DIR.parent
 ASSIGN4_ROOT = HDF5_ROOT.parent
 
 RAW_DIR = ASSIGN4_ROOT / "raw_data" / "dataset_ii_iris"
-DATA_DIR = HDF5_ROOT / "data"
-DATA_DIR.mkdir(parents=True, exist_ok=True)  # make sure it exists
+DATA_DIR_II = DATASET_II_DIR / "data"
+DATA_DIR_II.mkdir(parents=True, exist_ok=True)  # make sure it exists
 
 iris_data_path = RAW_DIR / "iris.data"
 iris_names_path = RAW_DIR / "iris.names"
 index_path = RAW_DIR / "index"
-h5_filename = DATA_DIR / "dataset_ii_iris.h5"
+h5_filename = DATA_DIR_II / "dataset_ii_iris.h5"
 
 # Step 1: Load the raw data
 
