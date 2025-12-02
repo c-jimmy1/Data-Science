@@ -17,14 +17,20 @@ conda env create -f environment.yaml
 conda activate consumer-credit-analysis
 ```
 
-### Step 4: Create Secrets File
-In the `assign3/` folder, create a `secrets.yaml` file. I.e. `assign3/secrets.yaml`. 
+### Step 4: Get FRED API Key Create Secrets File
+1. Get a FRED API Key by creating a free account. Instructions here: https://fred.stlouisfed.org/docs/api/api_key.html
+2. In the `assign3/` folder, create a `secrets.yaml` file. I.e. `assign3/secrets.yaml`. 
 Inside the secrets.yaml file, add a line with your FRED API Key.
 ```
-FRED_API_KEY=:"XXXXXXXXXXXXXXXXXXXXXXX"
+FRED_API_KEY:"XXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
-### Step 5: Run Jupyter Notebook
+### Step 5: Switch VS Code Python Interpreter to `consumer-credit-analysis`
+1. Open Command Menu: `Ctrl-Shift-P`
+2. Type in and Click: `Python: Select Interpreter`
+3. Select `consumer-credit-analysis` as your interpreter
+
+### Step 6: Run Jupyter Notebook
 ```
 assign3.ipynb
 ```

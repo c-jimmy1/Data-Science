@@ -8,8 +8,10 @@ dependencies:
   - pandas
   - numpy
   - matplotlib
+  - ipykernel
   - seaborn
   - scikit-learn
   - pip
+  - pyyaml
   - pip:
       - fredapi
